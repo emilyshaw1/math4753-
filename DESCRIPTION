@@ -1,0 +1,11 @@
+Package: MATH4753FALLshaw0050
+Type: Package
+Title: COntains a list of MATH 4753 functions
+Version: 0.1.0
+Author: Emily Shaw
+Maintainer: Emily Shaw <emily.e.shaw-1@ou.edu>
+Description: This is a package contains lab functions from STATS.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
