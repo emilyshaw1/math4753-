@@ -4,7 +4,7 @@ Title: COntains a list of MATH 4753 functions
 Version: 0.1.0
 Author: Emily Shaw
 Maintainer: Emily Shaw <emily.e.shaw-1@ou.edu>
-Description: This is a package contains lab functions from STATS.
+Description: This is a package contains some lab functions from STATS.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
