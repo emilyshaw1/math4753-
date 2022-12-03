@@ -1,0 +1,72 @@
+---
+title: "What the package does"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{What the package does}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753FALLshaw0050)
+```
+
+# Functions
+```{r}
+library(Intro2R)
+```
+
+
+## myboot2.R
+
+
+## mycltp.R
+This function take in a sample size, number of iterations, rate of parameter and returns a histogram of sample mean, barplot of sample y, and probability function for poisson 
+
+```{r}
+mycltp(3, 100, 10)
+```
+
+
+## mymlnorm.R
+This function takes in a sample vector, the mean, and sigma and returns a 3D plot
+```{r}
+y = c(10,12,13,15,12,11,10)
+mymlnorm(x=y,mu=seq(10,15,length=1000),sig=seq(0.1,3.5,length=1000),lwd=2,labcex=1)
+```
+
+
+## myncurve.R
+This function takes in the mean, standard deviation, and a lower tail probability starting point and returns a lower tail
+```{r}
+myncurve(mu=7,sigma=4,a=5)
+```
+
+
+## mysample.R
+This function takes in sample size, iteration number and when to release table and returns a barplot
+```{r}
+mysample(10,.05)
+```
+
+
+## myzfunction.R
+This function takes in a quantitative vector of data and returns a list containing the z value
+```{r}
+myzfunction(1:6)
+```
+
+## ntickets.R
+This function takes in N Number of seats in the flight the probability a plane is truly overbooked and the probability of a "show" and returns 2 plots of Objective function Vs n and list containing nd, nc, N, p and gamma are outputed
+
+```{r}
+ntickets(N=200, gamma = 0.02, p=0.95)
+```
+
