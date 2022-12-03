@@ -16,23 +16,26 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(MATH4753FALLshaw0050)
+knitr::opts_chunk$set(echo = TRUE, fig.width = 6 )
+
 ```
+
+
 
 # Functions
 ```{r}
 library(Intro2R)
+par(mar = c(15, 15, 15, 1)) 
 ```
 
 
 ## myboot2.R
-
-
-## mycltp.R
-This function take in a sample size, number of iterations, rate of parameter and returns a histogram of sample mean, barplot of sample y, and probability function for poisson 
+This function takes in a iter number of iter, a vector, string of what label should be, the alpha, and the cx returns a hisogram of Bootstrap sample statistics
 
 ```{r}
-mycltp(3, 100, 10)
+myboot2(iter=10000,c(1,1,1,2,2,2,2,3,3,3,4,4),fun="mean",alpha=0.05,cx=1.5)
 ```
+
 
 
 ## myncurve.R
@@ -55,10 +58,25 @@ This function takes in a quantitative vector of data and returns a list containi
 myzfunction(1:6)
 ```
 
+## mymlnorm.R
+This function takes in a sample vector, mean, sigma and returns 3D graph
+```{r}
+y = c(10,12,13,15,12,11,10)
+mymlnorm(x=y,mu=seq(10,15,length=1000),sig=seq(0.1,3.5,length=1000),lwd=2,labcex=1)
+```
+
+# Getting an error for figure margin too large
+
 ## ntickets.R
 This function takes in N Number of seats in the flight the probability a plane is truly overbooked and the probability of a "show" and returns 2 plots of Objective function Vs n and list containing nd, nc, N, p and gamma are outputed
 
 ```{r}
-ntickets(N=200, gamma = 0.02, p=0.95)
+#ntickets(N=20, gamma = 0.02, p=0.95)
 ```
 
+## mycltp.R
+This function take in a sample size, number of iterations, rate of parameter and returns a histogram of sample mean, barplot of sample y, and probability function for poisson 
+
+```{r}
+#mycltp(2,10000,10)
+```
